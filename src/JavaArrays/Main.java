@@ -38,6 +38,10 @@ public class Main {
         int index = Arrays.binarySearch(unsortedTab,3);
         System.out.println("Found 3 at position: " + index);
 
+        String[] names = {"Ola", "Kasia", "Tomek", "Ala"};
+        Arrays.sort(names);
+        System.out.println(Arrays.toString(names));
+
 
 
 
