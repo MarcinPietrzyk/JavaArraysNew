@@ -18,8 +18,18 @@ public class Main {
         System.out.println("Copy2:    " + Arrays.toString(copy2));
 //        II b. Array.copyOf()
         int[] someOfNumbers = Arrays.copyOf(numbers2, 4);
+        int[] someOfNumbersLonger = Arrays.copyOf(numbers2, 10);
         System.out.println("Original2:    " + Arrays.toString(numbers2));
         System.out.println("SomeOfNumbers:" + Arrays.toString(someOfNumbers));
+        System.out.println("SomeOfNumbersLonger:" + Arrays.toString(someOfNumbersLonger));
+//        II c. Copy without Array.copyOf()
+        String[] letters = {"a", "b", "c", "d"};
+        System.out.println("II c Letters: "+ Arrays.toString(letters));
+        char[] temp = new char[letters.length+ 5];
+        System.out.println("II c temp: "+ Arrays.toString(temp));
+//        System.arraycopy(letters, 0, temp, 0, letters.length);
+//        System.out.println("II c temp: "+ Arrays.toString(temp));
+
 //        III. Array.equals()
         int[] tab1 = {4,2,1,5,6};
         int[] tab2 = {4,2,1,5,6};
