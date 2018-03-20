@@ -52,6 +52,27 @@ public class Main {
         Arrays.sort(names);
         System.out.println(Arrays.toString(names));
 
+//        V. Foreach loop
+        int[] table = {3,5,2,1,7,10,4};
+        int i = 0;
+        for(int element:table){
+            System.out.println("Indeks "+ i + " element " + element);
+            i++;
+        }
+
+//        VI. Multidimension arrays
+//        int[][] table2D; //declaration
+//        table2D = new int[6][6]; //init
+
+//        int[][] table2D = new int[6][6]; //first is row second is column
+        int[][] table2D = {{1,2,3,4},
+                            {5,6,7,8},
+                            {9,10,11,12}};
+        System.out.println("Table2D[1][3]: "+table2D[1][3]);
+
+
+
+
 
 
 
