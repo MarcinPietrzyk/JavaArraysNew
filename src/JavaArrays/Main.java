@@ -109,6 +109,7 @@ public class Main {
         aryNumbers[5][3] = 12;
         aryNumbers[5][4] = 11;
 
+
         int row=6;
         int column=5;
 
@@ -120,6 +121,26 @@ public class Main {
             }
             System.out.println( " " );
         }
+//      VII. Tables
+//      1. creating new table
+        int[] table4 = new int[100];
+//      2. inserting values into cells
+        for(int element = 0; element<table4.length; element++){
+            table4[element] = element;
+        }
+//      3. printing values
+        for(int element = 0; element<table4.length; element++){
+            if(element<10){
+                System.out.print("0" + table4[element]+ ", ");
+            } else {
+                System.out.print(table4[element]+ ", ");
+            }
+            if(element>0 && (element+1)%10 == 0){
+                System.out.println();
+            }
+        }
+
+
 
         Vehicle v1 = new Vehicle("Tesla","Blue",30000);
         Vehicle v2 = new Vehicle("Vw","Red",15000);
