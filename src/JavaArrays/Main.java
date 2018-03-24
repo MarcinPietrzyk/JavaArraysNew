@@ -121,6 +121,16 @@ public class Main {
             System.out.println( " " );
         }
 
+        Vehicle v1 = new Vehicle("Tesla","Blue",30000);
+        Vehicle v2 = new Vehicle("Vw","Red",15000);
+        v1.displayVehicleDetails();
+        v2.displayVehicleDetails();
+        v2.setModel("Jaguar");
+        v2.setColor("Silver");
+        v2.setPrice(45000);
+        v2.displayVehicleDetails();
+
+
 
 
 
