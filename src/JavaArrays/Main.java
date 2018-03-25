@@ -1,6 +1,8 @@
 package JavaArrays;
+import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -151,13 +153,45 @@ public class Main {
         v2.setPrice(45000);
         v2.displayVehicleDetails();
 
+//      VIII Scanner/Max/Min/Avg
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Write how many numbers you will enter: ");
+        int numbersInArray = scanner.nextInt();
+        double[] measures = new double[numbersInArray];
 
-
-
-
-
-
-
+//      1. input data
+        for(int m = 0; m<measures.length;m++){
+            System.out.println("Type "+ m + " number: ");
+            measures[m] = scanner.nextDouble();
+        }
+//      2. Max
+        double max = 0;
+        for(double measure: measures){
+            if(measure>max){
+                max = measure;
+            }
+        }
+        System.out.println("Max measure is: "+ max);
+//      3. Min
+        double min = 1000000;
+        for (double measure: measures){
+            if(measure<min){
+                min = measure;
+            }
+        }
+        System.out.println("Min measure is: " + min);
+//      3. Sum
+        double sum = 0;
+        for(double measure:measures){
+            sum += measure;
+        }
+        System.out.println("Sum is: " + sum);
+//      4. Avg
+        double average = sum/measures.length;
+        System.out.println("Average measures is: " + String.format("%.2f", average));
+        double input = 43.23242455;
+        System.out.println("Double: " + input);
+        System.out.println("Double: " + String.format("%.2f", input));
 
     }
 }
