@@ -193,5 +193,62 @@ public class Main {
         System.out.println("Double: " + input);
         System.out.println("Double: " + String.format("%.2f", input));
 
+
+//      IX switch
+        int temperatur = 37;
+        switch (temperatur){
+            case 35:
+                System.out.println("Temperature is 35");
+                break;
+
+            case 36:
+                System.out.println("Temperature is 36");
+                break;
+            case 37:
+                System.out.println("Temperature is 37");
+                break;
+            case 38:
+                System.out.println("Temperature is 38");
+                break;
+            default:
+                System.out.println("Don't know this value");
+                break;
+        }
+
+//      X Decrementing for loop test
+        for(int number = 20; number > 9; number-- ){
+            System.out.print(number + ", ");
+        }
+        System.out.println("");
+        for(int number2 = -9; number2 < 41; number2+=2){
+
+                System.out.print("Number2: "+ number2 + ", ");
+            }
+
+//      XI While loop test
+        System.out.println("");
+        int count = 10;
+        while(count < 21){
+            System.out.print("Counting " + count + ", ");
+            count++;
+        }
+
+        int count2 = -10;
+        while (count2 < 41){
+            System.out.println("test1");
+            if(count2%2==0){
+                System.out.println("test2");
+            }else{
+                System.out.print("Count2: "+ count2 + ", ");
+            }
+            count2++;
+            System.out.println("test3");
+        }
+
+//        XII int[] tab argument
+        int[] argNumbers = new int[]{1, 4, 2, 6, 8, 9, 2};
+        Array table1 = new Array();
+        int summ = table1.sumArray(argNumbers);
+        System.out.println("Sum= "+summ);
     }
 }
