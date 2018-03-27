@@ -250,5 +250,28 @@ public class Main {
         Array table1 = new Array();
         int summ = table1.sumArray(argNumbers);
         System.out.println("Sum= "+summ);
+
+//        XIII int[][] tab2 argument
+//        a.
+        int[][] argNumbers2D = new int[][]{
+                {1,2,3},
+                {1,2,3},
+                {1,2,3}};
+        Array table2 = new Array();
+        int summ2 = table2.sumArray2D(argNumbers2D);
+        System.out.println("2D Array sum = "+ summ2);
+//      b. static 2d Array
+        int[][] numbers2D = new int[][]{
+                {1, 2},
+                {3, 4},
+                {5, 6, 7}
+                };
+        System.out.println("Static, foreach sum= "+Array.sum2Array2D(numbers2D));
+
+//      c. static 1d Array
+        int[] numbers3 = new int[]{1,2,3};
+        System.out.println(Array.sumArray2(numbers3));
+
     }
+
 }

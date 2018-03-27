@@ -8,4 +8,31 @@ public class Array {
         }
         return sum;
     }
+
+    public int sumArray2D(int[][] tab2){
+        int sum = 0;
+        for(int row = 0; row<tab2.length; row++){
+            for(int column = 0; column<tab2[row].length; column++)
+            sum += tab2[row][column];
+        }
+        return sum;
+    }
+
+    public static int sum2Array2D(int[][] tab2d) {
+        int sum = 0;
+        for (int[] otherNumbers : tab2d) {
+            for (int number : otherNumbers) {
+                sum += number;
+            }
+        }
+        return sum;
+    }
+
+    public static int sumArray2(int[] table){
+        int sum = 0;
+        for(int number: table){
+            sum += number;
+        }
+        return sum;
+    }
 }
