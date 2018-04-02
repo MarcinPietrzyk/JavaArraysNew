@@ -35,4 +35,14 @@ public class Array {
         }
         return sum;
     }
+
+    public void printArray(int[][] tabB) {
+        for (int i = 0; i < tabB.length; i++) {
+            for (int j = 0; j < tabB[i].length; j++)
+                if (tabB[i][j] % 2 == 0) {
+                System.out.println(tabB[i][j] + ", ");
+                }
+        }
+    }
+
 }

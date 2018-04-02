@@ -272,6 +272,14 @@ public class Main {
         int[] numbers3 = new int[]{1,2,3};
         System.out.println(Array.sumArray2(numbers3));
 
+//        XIV int[][]tabB test
+        int[][] tabB = {{1, 2, 3, 4},
+                {5, 6, 7, 8}};
+
+        Array test = new Array();
+        System.out.println("Test: ");
+        test.printArray(tabB);
+
     }
 
 }
