@@ -1,8 +1,6 @@
 package JavaArrays;
 import javax.sound.midi.Soundbank;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -279,6 +277,21 @@ public class Main {
         Array test = new Array();
         System.out.println("Test: ");
         test.printArray(tabB);
+
+//        XV Lists
+
+        List<String> listOne = new ArrayList<String>();
+        listOne.add("first");
+        listOne.add("second");
+        listOne.add("first");
+        List<String> listTwo = new ArrayList<String>();
+        listTwo.addAll(listOne);
+        String begining = listTwo.get(1);
+        System.out.println(begining);
+        boolean empty = listTwo.isEmpty();
+        System.out.println(empty);
+        int size = listTwo.size();
+        System.out.println(size);
 
     }
 
