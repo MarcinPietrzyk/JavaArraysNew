@@ -293,6 +293,15 @@ public class Main {
         int size = listTwo.size();
         System.out.println(size);
 
+//        XVI References
+        Object referenceToObjectX = new Object();
+        Object anotherReferenceToObjectX = referenceToObjectX;
+        Object refferenceToObjectY = new Object();
+
+        System.out.println(referenceToObjectX.toString());
+        System.out.println(anotherReferenceToObjectX.toString());
+        System.out.println(refferenceToObjectY.toString());
+
     }
 
 }
