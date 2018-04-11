@@ -301,6 +301,10 @@ public class Main {
         System.out.println(referenceToObjectX.toString());
         System.out.println(anotherReferenceToObjectX.toString());
         System.out.println(refferenceToObjectY.toString());
+//      XVII Casting
+
+        Casting cast1 = new Casting();
+        cast1.differentTypes();
 
     }
 
